@@ -1,5 +1,5 @@
-
 income = int(input("Enter the income: "))
+
 tax = 0
 if income <= 250000:
     tax = 0
