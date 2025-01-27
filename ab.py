@@ -27,4 +27,15 @@ flesch = 835.206 - (1.015*(word_len/sentence_len)) - (84.6*(syllables / word_len
 grade = 0.39 * (word_len / sentence_len) + 11.8 * (syllables / word_len) - 15.59
 print("Flesch score:", flesch)
 print("Grade:", grade)
+
+inp = open("data.txt", "r")
+out = open("content.txt", "w")
+text = inp.read()
+for letter in text:
+    if letter in "aeiou":
+        out.write("#")
+    else:
+        out.write(letter)
+        
+out.close()
 inp.close()
