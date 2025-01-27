@@ -17,7 +17,4 @@ for i in range (a):
      f2.write(str2)
 
 
-
-
-
 f.close()
